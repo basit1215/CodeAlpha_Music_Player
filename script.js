@@ -12,7 +12,6 @@ const playBtn = document.querySelector('.play');
 const forwardOpt = document.querySelector('.forward-opt');
 const backwardOpt = document.querySelector('.backward-opt');
 
-
 playBtn.addEventListener('click', () => {
     if(playBtn.className.includes('pause')){
         music.play();
@@ -23,10 +22,8 @@ playBtn.addEventListener('click', () => {
     musicDisk.classList.toggle('play');
 })
 
-//Setting Up Music
-
 const setMusic = (i) => {
-    progressBar.value = 0; //set the value of range slide to 0.
+    progressBar.value = 0; 
     let song = songs[i];
     CurrentMusic = i;
     music.src = song.path;
@@ -44,8 +41,6 @@ const setMusic = (i) => {
 
 setMusic(0);
 
-//formatting of time in minutes and seconds.
-
 const formatTime = (time) => {
     let min = Math.floor(time/60);
     if (min < 10) {
@@ -59,14 +54,10 @@ const formatTime = (time) => {
     return `${min} : ${sec}`;
 }
 
-//make the progess bar to run.
-
 setInterval(() => {
     progressBar.value = music.currentTime;
     currentTime.innerHTML = formatTime(music.currentTime);
 }, 500)
-
-//jump into the progress bar. 
 
 progressBar.addEventListener('change' ,() => {
     music.currentTime = progressBar.value;
@@ -77,8 +68,6 @@ const playMusic = () => {
     playBtn.classList.remove('pause');
     musicDisk.classList.add('play');
 }
-
-//making forward and backward buttons operational. 
 
 forwardOpt.addEventListener('click' ,() => {
     if(CurrentMusic >= songs.length - 1) {

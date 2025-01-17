@@ -30,4 +30,3 @@ let songs = [
         cover: 'assets/song5.png'
     },
 ]
-    

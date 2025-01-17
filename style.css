@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #388697;
+    background-color: #4a90e2; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -18,11 +18,11 @@ body {
     width: 355px;
     height: 560px;
     border-radius: 22px;
-    background-color: rgba(255, 255, 255, 0.09);
-    box-shadow: 0px 42px 100px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0px 42px 100px rgba(255, 255, 255, 0.15); 
     overflow: hidden;
     padding: 35px;
-    color: #d5eebb;
+    color: #f1f1f1; 
 }
 
 .name-of-music,
@@ -35,10 +35,12 @@ body {
     font-size: 42px;
     font-weight: 550;
     margin-bottom: 10px;
+    color: #ffffff; 
 }
 
 .name-of-artist {
     font-size: 25px;
+    color: #a6b0bf; 
 }
 
 .music-disk {
@@ -68,7 +70,7 @@ body {
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: #388697;
+    background-color: #ff5722; 
 }
 
 .song-slider {
@@ -81,7 +83,7 @@ body {
     width: 100%;
     height: 6px;
     border-radius: 11px;
-    background-color: darkmagenta;
+    background-color: #9c27b0; 
     cursor: pointer;
     overflow: hidden;
 }
@@ -90,8 +92,8 @@ body {
     -webkit-appearance: none;
     width: 1px;
     height: 22px;
-    background-color: gold;
-    box-shadow: -402px 0 0 402px #EBBAB9;
+    background-color: #ffffff; 
+    box-shadow: -402px 0 0 402px #ffd54f; 
 }
 
 .current-state,
@@ -102,6 +104,7 @@ body {
 .song-time {
     position: absolute;
     right: 0;
+    color: #ffffff;
 }
 
 .control-settings {
@@ -118,7 +121,7 @@ body {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    background-color: #d5eebb;
+    background-color: #ff5722; 
     cursor: pointer;
     border: none;
 }
@@ -131,11 +134,10 @@ body {
     width: 10px;
     height: 30px;
     border-radius: 2px;
-    background-color: #04030F;
+    background-color: #ffffff; 
     transition: .5s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
 
 .play span:nth-child(2) {
     left: 57%;
@@ -175,7 +177,7 @@ body {
 .btn {
     width: 42px;
     height: 42px;
-    background-color: #d5eebb;
+    background-color: #ff5722; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
